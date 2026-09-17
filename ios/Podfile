@@ -15,6 +15,7 @@ if linkage != nil
 end
 
 target 'BigSoundBassToolkit' do
+  pod 'AudioLab', :path => '../native/AudioLab'
   config = use_native_modules!
 
   use_react_native!(

@@ -1,0 +1,422 @@
+[
+  {
+    "id": "1",
+    "title": "Amplitude",
+    "category": "SIGNALS",
+    "pronunciation": "/ˈæmplɪtuːd/",
+    "body": "Amplitude describes how far a waveform moves from its equilibrium or zero level. In audio, greater amplitude generally corresponds to a stronger signal or greater sound pressure, although perceived loudness does not increase linearly with amplitude."
+  },
+  {
+    "id": "2",
+    "title": "Frequency",
+    "category": "WAVES",
+    "pronunciation": "/ˈfriːkwənsi/",
+    "body": "Frequency is the number of complete waveform cycles that occur each second. It is measured in hertz, or Hz, and strongly influences perceived pitch: lower frequencies are usually heard as deeper sounds, while higher frequencies are heard as brighter or higher-pitched sounds."
+  },
+  {
+    "id": "3",
+    "title": "Wavelength",
+    "category": "WAVES",
+    "pronunciation": "/ˈweɪvleŋθ/",
+    "body": "Wavelength is the physical distance covered by one complete cycle of a wave. It depends on both frequency and propagation speed, which is why low-frequency bass waves can be several metres long while high-frequency waves may measure only a few centimetres."
+  },
+  {
+    "id": "4",
+    "title": "Period",
+    "category": "SIGNALS",
+    "pronunciation": "/ˈpɪəriəd/",
+    "body": "Period is the amount of time required for one complete waveform cycle. It is the inverse of frequency, so a lower-frequency signal has a longer period while a higher-frequency signal completes each cycle more quickly."
+  },
+  {
+    "id": "5",
+    "title": "Phase",
+    "category": "WAVES",
+    "pronunciation": "/feɪz/",
+    "body": "Phase describes the position of one waveform within its cycle relative to another waveform or reference point. It is usually measured in degrees, where 0° represents alignment and 180° represents an opposite position in the cycle."
+  },
+  {
+    "id": "6",
+    "title": "Sound Pressure Level",
+    "category": "MEASUREMENT",
+    "pronunciation": "/saʊnd ˈpreʃər ˈlevəl/",
+    "body": "Sound Pressure Level, or SPL, expresses acoustic pressure relative to a standard reference pressure. It is measured in dB SPL and provides a physical measurement of sound level rather than a direct measurement of perceived loudness."
+  },
+  {
+    "id": "7",
+    "title": "Decibel",
+    "category": "LEVEL",
+    "pronunciation": "/ˈdesɪbel/",
+    "body": "A decibel is a logarithmic unit used to describe ratios between signal levels, pressures, or powers. Because audio spans an extremely large range of physical values, the decibel scale provides a practical way to express level differences."
+  },
+  {
+    "id": "8",
+    "title": "Fundamental Frequency",
+    "category": "HARMONICS",
+    "pronunciation": "/ˌfʌndəˈmentəl ˈfriːkwənsi/",
+    "body": "The fundamental frequency is the lowest major periodic frequency in a harmonic sound and usually determines its perceived pitch. Higher harmonics can appear above it at integer multiples of the fundamental."
+  },
+  {
+    "id": "9",
+    "title": "Harmonic",
+    "category": "HARMONICS",
+    "pronunciation": "/hɑːrˈmɒnɪk/",
+    "body": "A harmonic is a frequency component that occurs at an integer multiple of a fundamental frequency. Harmonics combine with the fundamental to shape the tonal character and timbre of instruments, voices, and synthesized sounds."
+  },
+  {
+    "id": "10",
+    "title": "Overtone",
+    "category": "HARMONICS",
+    "pronunciation": "/ˈoʊvərtoʊn/",
+    "body": "An overtone is any frequency component above the fundamental frequency of a sound. Harmonic overtones follow regular integer relationships, while some instruments also produce inharmonic overtones."
+  },
+  {
+    "id": "11",
+    "title": "Timbre",
+    "category": "PERCEPTION",
+    "pronunciation": "/ˈtæmbər/",
+    "body": "Timbre is the tonal quality that allows two sounds with the same pitch and similar loudness to remain distinguishable. It is shaped by harmonic content, transients, envelopes, resonance, noise components, and how the spectrum changes over time."
+  },
+  {
+    "id": "12",
+    "title": "Resonance",
+    "category": "ACOUSTICS",
+    "pronunciation": "/ˈrezənəns/",
+    "body": "Resonance occurs when a system responds especially strongly near one of its natural frequencies. In rooms, instruments, speakers, and enclosures, resonance can significantly increase energy around particular frequency regions."
+  },
+  {
+    "id": "13",
+    "title": "Room Mode",
+    "category": "ROOM ACOUSTICS",
+    "pronunciation": "/ruːm moʊd/",
+    "body": "A room mode is a low-frequency resonance created by the dimensions and boundaries of an enclosed space. Modes produce characteristic regions of higher and lower acoustic pressure and can cause bass response to vary dramatically between listening positions."
+  },
+  {
+    "id": "14",
+    "title": "Standing Wave",
+    "category": "ROOM ACOUSTICS",
+    "pronunciation": "/ˈstændɪŋ weɪv/",
+    "body": "A standing wave is a stationary pressure pattern created when waves of the same frequency interact in opposite directions. In rooms, standing waves can form pressure maxima and minima that cause strong peaks or nulls at certain locations."
+  },
+  {
+    "id": "15",
+    "title": "Node",
+    "category": "WAVES",
+    "pronunciation": "/noʊd/",
+    "body": "A node is a location in a standing-wave pattern where a particular physical quantity has minimum variation. In room acoustics, certain modal patterns can create positions where a frequency is significantly reduced."
+  },
+  {
+    "id": "16",
+    "title": "Antinode",
+    "category": "WAVES",
+    "pronunciation": "/ˈæntinoʊd/",
+    "body": "An antinode is a location in a standing-wave pattern where oscillation reaches a maximum. In an acoustic room mode, these areas can correspond to especially strong pressure at particular frequencies."
+  },
+  {
+    "id": "17",
+    "title": "Constructive Interference",
+    "category": "PHASE",
+    "pronunciation": "/kənˈstrʌktɪv ˌɪntərˈfɪrəns/",
+    "body": "Constructive interference occurs when multiple sound waves combine in a way that increases the resulting amplitude. It is strongest when equal-frequency waves arrive closely aligned in phase."
+  },
+  {
+    "id": "18",
+    "title": "Destructive Interference",
+    "category": "PHASE",
+    "pronunciation": "/dɪˈstrʌktɪv ˌɪntərˈfɪrəns/",
+    "body": "Destructive interference occurs when waves oppose each other and reduce the resulting signal level. If two equal signals arrive exactly 180° apart, ideal cancellation can occur."
+  },
+  {
+    "id": "19",
+    "title": "Null",
+    "category": "ROOM ACOUSTICS",
+    "pronunciation": "/nʌl/",
+    "body": "A null is a strong reduction in level caused by destructive interference. In bass reproduction, deep nulls often depend on speaker and listener position and can be difficult to correct using equalization alone."
+  },
+  {
+    "id": "20",
+    "title": "Peak",
+    "category": "LEVEL",
+    "pronunciation": "/piːk/",
+    "body": "A peak is the highest instantaneous amplitude reached by a signal or the strongest point in a frequency response. Peaks are important when monitoring recording headroom and identifying resonant frequency regions."
+  },
+  {
+    "id": "21",
+    "title": "RMS",
+    "category": "SIGNALS",
+    "pronunciation": "/ˌɑːr em ˈes/",
+    "body": "RMS, or Root Mean Square, is a mathematical method used to describe the effective magnitude of a varying signal. In audio, RMS provides more information about sustained signal energy than a peak measurement alone."
+  },
+  {
+    "id": "22",
+    "title": "Crest Factor",
+    "category": "DYNAMICS",
+    "pronunciation": "/krest ˈfæktər/",
+    "body": "Crest factor is the difference between the peak level and average or RMS level of a signal. A large crest factor usually indicates strong transients and greater dynamic variation, while a smaller value suggests a denser or more compressed signal."
+  },
+  {
+    "id": "23",
+    "title": "Headroom",
+    "category": "DIGITAL AUDIO",
+    "pronunciation": "/ˈhedruːm/",
+    "body": "Headroom is the available margin between normal signal peaks and the maximum level a system can handle before overload or clipping. Maintaining sufficient headroom helps preserve clean recording and processing."
+  },
+  {
+    "id": "24",
+    "title": "Clipping",
+    "category": "DISTORTION",
+    "pronunciation": "/ˈklɪpɪŋ/",
+    "body": "Clipping occurs when a signal exceeds the maximum level a device or digital system can represent. The waveform peaks are truncated, creating additional harmonic content and usually producing audible distortion."
+  },
+  {
+    "id": "25",
+    "title": "Sample Rate",
+    "category": "DIGITAL AUDIO",
+    "pronunciation": "/ˈsæmpəl reɪt/",
+    "body": "Sample rate is the number of measurements taken from an analog signal every second during digital conversion. Common values such as 44.1 kHz and 48 kHz represent 44,100 and 48,000 samples per second."
+  },
+  {
+    "id": "26",
+    "title": "Bit Depth",
+    "category": "DIGITAL AUDIO",
+    "pronunciation": "/bɪt depθ/",
+    "body": "Bit depth determines how many possible amplitude values are available for each digital audio sample. Greater bit depth increases theoretical dynamic range and provides more practical recording headroom."
+  },
+  {
+    "id": "27",
+    "title": "Nyquist Frequency",
+    "category": "DIGITAL AUDIO",
+    "pronunciation": "/ˈnaɪkwɪst ˈfriːkwənsi/",
+    "body": "The Nyquist frequency is half the sample rate and represents the upper theoretical frequency boundary of a sampled system. Frequencies above this limit must be controlled to prevent aliasing."
+  },
+  {
+    "id": "28",
+    "title": "Aliasing",
+    "category": "DIGITAL AUDIO",
+    "pronunciation": "/ˈeɪliəsɪŋ/",
+    "body": "Aliasing is a digital artifact that occurs when frequencies above the Nyquist limit are sampled without sufficient filtering. These frequencies can be incorrectly represented as lower frequencies that were not present in the original signal."
+  },
+  {
+    "id": "29",
+    "title": "FFT",
+    "category": "ANALYSIS",
+    "pronunciation": "/ˌef ef ˈtiː/",
+    "body": "FFT stands for Fast Fourier Transform, an algorithm used to convert time-domain audio into a frequency-domain representation. Spectrum analyzers use FFT processing to reveal fundamentals, harmonics, noise, and resonances."
+  },
+  {
+    "id": "30",
+    "title": "Spectrum",
+    "category": "ANALYSIS",
+    "pronunciation": "/ˈspektrəm/",
+    "body": "A spectrum shows how the energy of a sound is distributed across frequency. Unlike a waveform, which displays amplitude over time, a spectrum makes it easier to identify tonal peaks, harmonics, resonances, and overall frequency balance."
+  },
+  {
+    "id": "31",
+    "title": "Filter",
+    "category": "FILTERS",
+    "pronunciation": "/ˈfɪltər/",
+    "body": "A filter changes the frequency content of an audio signal by reducing or passing selected frequency regions. Common types include low-pass, high-pass, band-pass, and band-stop filters."
+  },
+  {
+    "id": "32",
+    "title": "Cutoff Frequency",
+    "category": "FILTERS",
+    "pronunciation": "/ˈkʌtɒf ˈfriːkwənsi/",
+    "body": "Cutoff frequency identifies the transition region where a filter begins significantly changing the level of a signal. The exact behavior around this point depends on filter type, slope, and design."
+  },
+  {
+    "id": "33",
+    "title": "Q Factor",
+    "category": "FILTERS",
+    "pronunciation": "/kjuː ˈfæktər/",
+    "body": "Q factor describes the width of a resonant or filtered frequency band relative to its center frequency. A higher Q generally produces a narrower adjustment, while a lower Q affects a broader range."
+  },
+  {
+    "id": "34",
+    "title": "Equalization",
+    "category": "FILTERS",
+    "pronunciation": "/ˌiːkwəlaɪˈzeɪʃən/",
+    "body": "Equalization, or EQ, is the process of adjusting the level of selected frequency regions. It can be used to control resonances, shape timbre, correct tonal imbalance, or adapt a playback system to a particular environment."
+  },
+  {
+    "id": "35",
+    "title": "Low-Pass Filter",
+    "category": "FILTERS",
+    "pronunciation": "/ˈloʊ pæs ˈfɪltər/",
+    "body": "A low-pass filter allows lower frequencies to pass while progressively reducing frequencies above its cutoff region. It is commonly used to limit the upper frequency range sent to a subwoofer."
+  },
+  {
+    "id": "36",
+    "title": "High-Pass Filter",
+    "category": "FILTERS",
+    "pronunciation": "/ˈhaɪ pæs ˈfɪltər/",
+    "body": "A high-pass filter allows higher frequencies to pass while attenuating frequencies below its cutoff region. It is useful for removing rumble, subsonic energy, and unnecessary low-frequency content."
+  },
+  {
+    "id": "37",
+    "title": "Crossover",
+    "category": "LOUDSPEAKERS",
+    "pronunciation": "/ˈkrɒsoʊvər/",
+    "body": "A crossover divides an audio signal into frequency bands so different loudspeaker drivers can reproduce the ranges they handle most effectively. Proper crossover design also considers amplitude and phase behavior around the transition frequency."
+  },
+  {
+    "id": "38",
+    "title": "Subwoofer",
+    "category": "BASS",
+    "pronunciation": "/ˈsʌbwʊfər/",
+    "body": "A subwoofer is a loudspeaker system designed primarily to reproduce low-frequency audio. Its performance is strongly affected by room modes, placement, boundary reinforcement, crossover settings, and phase alignment."
+  },
+  {
+    "id": "39",
+    "title": "Boundary Gain",
+    "category": "ROOM ACOUSTICS",
+    "pronunciation": "/ˈbaʊndəri ɡeɪn/",
+    "body": "Boundary gain is the increase in low-frequency output that can occur when a sound source is positioned close to large surfaces such as walls, floors, or corners. More nearby boundaries can produce stronger reinforcement."
+  },
+  {
+    "id": "40",
+    "title": "Reflection",
+    "category": "ACOUSTICS",
+    "pronunciation": "/rɪˈflekʃən/",
+    "body": "Reflection occurs when sound energy reaches a surface and part of that energy returns into the space. Reflections can create reverberation, interference, coloration, and changes in spatial perception."
+  },
+  {
+    "id": "41",
+    "title": "Absorption",
+    "category": "ACOUSTICS",
+    "pronunciation": "/əbˈzɔːrpʃən/",
+    "body": "Absorption is the process by which a material converts part of incident acoustic energy into other forms, primarily heat. Absorption effectiveness varies greatly with frequency and material thickness."
+  },
+  {
+    "id": "42",
+    "title": "Diffusion",
+    "category": "ROOM ACOUSTICS",
+    "pronunciation": "/dɪˈfjuːʒən/",
+    "body": "Diffusion redistributes reflected sound energy across multiple directions rather than allowing one strong reflection to dominate. Acoustic diffusers are often used to create a more spatially distributed reflection field without simply absorbing energy."
+  },
+  {
+    "id": "43",
+    "title": "Reverberation",
+    "category": "ROOM ACOUSTICS",
+    "pronunciation": "/rɪˌvɜːrbəˈreɪʃən/",
+    "body": "Reverberation is the persistence of sound in an enclosed space after the original source has stopped. It results from many reflections arriving over time and contributes strongly to the perceived size and character of a room."
+  },
+  {
+    "id": "44",
+    "title": "RT60",
+    "category": "ROOM ACOUSTICS",
+    "pronunciation": "/ˌɑːr tiː ˈsɪksti/",
+    "body": "RT60 is the estimated time required for reverberant sound level in a room to decay by 60 dB after the source stops. It is widely used as a practical measure of room reverberation."
+  },
+  {
+    "id": "45",
+    "title": "Direct Sound",
+    "category": "ACOUSTICS",
+    "pronunciation": "/dəˈrekt saʊnd/",
+    "body": "Direct sound travels from the source to the listener without first reflecting from a surface. It normally arrives before reflected energy and provides important information about source location and clarity."
+  },
+  {
+    "id": "46",
+    "title": "Transient",
+    "category": "SIGNALS",
+    "pronunciation": "/ˈtrænziənt/",
+    "body": "A transient is a short, rapid change in signal amplitude, often occurring at the beginning of a sound. Drum strikes, clicks, plucked strings, and consonants contain strong transients that help define timing and timbre."
+  },
+  {
+    "id": "47",
+    "title": "Envelope",
+    "category": "SIGNALS",
+    "pronunciation": "/ˈenvəloʊp/",
+    "body": "An envelope describes how the amplitude or another characteristic of a sound changes over time. Attack, decay, sustain, and release are commonly used stages for describing amplitude envelopes."
+  },
+  {
+    "id": "48",
+    "title": "Attack",
+    "category": "DYNAMICS",
+    "pronunciation": "/əˈtæk/",
+    "body": "Attack is the time taken for a sound to rise from its initial level toward its early maximum. Fast attacks produce sharp, immediate sounds, while slow attacks create smoother and more gradual beginnings."
+  },
+  {
+    "id": "49",
+    "title": "Decay",
+    "category": "DYNAMICS",
+    "pronunciation": "/dɪˈkeɪ/",
+    "body": "Decay describes the reduction in level following a sound's initial attack. In an ADSR envelope, it is the transition from the initial peak toward the sustain level."
+  },
+  {
+    "id": "50",
+    "title": "Sustain",
+    "category": "DYNAMICS",
+    "pronunciation": "/səˈsteɪn/",
+    "body": "Sustain is the level maintained while a sound continues after its initial attack and decay stages. Unlike attack, decay, and release, sustain usually describes a level rather than a duration."
+  },
+  {
+    "id": "51",
+    "title": "Release",
+    "category": "DYNAMICS",
+    "pronunciation": "/rɪˈliːs/",
+    "body": "Release is the time required for a sound to fade after the source or note ends. Longer release values create a gradual tail, while short releases make the sound stop more abruptly."
+  },
+  {
+    "id": "52",
+    "title": "Noise Floor",
+    "category": "SIGNAL QUALITY",
+    "pronunciation": "/nɔɪz flɔːr/",
+    "body": "The noise floor is the background level of unwanted noise present in a recording or electronic system when no desired signal is dominant. A lower noise floor allows weaker useful signals to remain distinguishable."
+  },
+  {
+    "id": "53",
+    "title": "Signal-to-Noise Ratio",
+    "category": "SIGNAL QUALITY",
+    "pronunciation": "/ˈsɪɡnəl tə nɔɪz ˈreɪʃioʊ/",
+    "body": "Signal-to-noise ratio, or SNR, compares the level of a desired signal with the level of background noise. A larger SNR generally indicates a cleaner signal with greater separation from unwanted noise."
+  },
+  {
+    "id": "54",
+    "title": "Distortion",
+    "category": "SIGNAL QUALITY",
+    "pronunciation": "/dɪˈstɔːrʃən/",
+    "body": "Distortion is any alteration that causes the output signal to differ from the intended input signal. It may result from clipping, nonlinear components, loudspeaker limits, processing, or intentional audio effects."
+  },
+  {
+    "id": "55",
+    "title": "Dynamic Range",
+    "category": "DYNAMICS",
+    "pronunciation": "/daɪˈnæmɪk reɪndʒ/",
+    "body": "Dynamic range is the difference between the lowest usable signal level and the highest level a system can reproduce without unacceptable distortion. It can describe a recording, converter, playback system, or acoustic environment."
+  },
+  {
+    "id": "56",
+    "title": "Mono",
+    "category": "STEREO",
+    "pronunciation": "/ˈmɒnoʊ/",
+    "body": "Mono audio uses a single signal channel. When reproduced through multiple speakers, each can receive the same channel information rather than separate left and right spatial content."
+  },
+  {
+    "id": "57",
+    "title": "Stereo",
+    "category": "STEREO",
+    "pronunciation": "/ˈsterioʊ/",
+    "body": "Stereo audio normally uses separate left and right channels to create spatial width and directional information. Differences in level, timing, phase, and spectrum between the channels contribute to the perceived stereo image."
+  },
+  {
+    "id": "58",
+    "title": "Correlation",
+    "category": "STEREO",
+    "pronunciation": "/ˌkɒrəˈleɪʃən/",
+    "body": "Correlation describes how similarly two signals behave over time. In stereo audio, correlation measurements can help identify strong channel differences and potential cancellation when left and right channels are combined to mono."
+  },
+  {
+    "id": "59",
+    "title": "Delay",
+    "category": "TIMING",
+    "pronunciation": "/dɪˈleɪ/",
+    "body": "Delay is a time offset between an original signal and another version of that signal. It can be used creatively as an effect or technically for speaker alignment, phase adjustment, and acoustic timing."
+  },
+  {
+    "id": "60",
+    "title": "Latency",
+    "category": "DIGITAL AUDIO",
+    "pronunciation": "/ˈleɪtənsi/",
+    "body": "Latency is the time required for audio to pass through a recording, processing, transmission, or playback system. High latency can become noticeable during monitoring, live performance, or interactive audio applications."
+  }
+]

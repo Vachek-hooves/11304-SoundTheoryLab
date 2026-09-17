@@ -1,0 +1,382 @@
+[
+  {
+    "id": "1",
+    "question": "A 50 Hz sound wave travels through air at approximately 343 m/s. What is its wavelength?",
+    "options": ["3.43 m", "5.15 m", "6.86 m", "8.58 m"],
+    "answer": 2
+  },
+  {
+    "id": "2",
+    "question": "Two equal 80 Hz signals arrive at a listener exactly 180° out of phase. What is the ideal result?",
+    "options": [
+      "Maximum cancellation",
+      "A 3 dB increase",
+      "A frequency shift",
+      "Double the wavelength"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "3",
+    "question": "Why can deep bass vary dramatically between two seats in the same room?",
+    "options": [
+      "Bass frequencies change speed across the room",
+      "The subwoofer generates different notes in different directions",
+      "Human hearing changes the original frequency",
+      "Room modes create position-dependent peaks and nulls"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "4",
+    "question": "A signal has a period of 5 ms. What is its frequency?",
+    "options": ["50 Hz", "200 Hz", "500 Hz", "2,000 Hz"],
+    "answer": 1
+  },
+  {
+    "id": "5",
+    "question": "Which change produces approximately a +6 dB increase in an amplitude quantity?",
+    "options": [
+      "Doubling the amplitude",
+      "Doubling the frequency",
+      "Doubling the wavelength",
+      "Doubling the sample rate"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "6",
+    "question": "Which statement about low-frequency sound is most accurate?",
+    "options": [
+      "It is always perfectly omnidirectional",
+      "It does not interact with walls",
+      "Its long wavelength usually makes it less directional than higher-frequency sound",
+      "It travels more slowly than treble"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "7",
+    "question": "A room is 5 m long. Approximately where is its first axial mode along that dimension?",
+    "options": ["17.2 Hz", "68.6 Hz", "50 Hz", "34.3 Hz"],
+    "answer": 3
+  },
+  {
+    "id": "8",
+    "question": "A 100 Hz fundamental has which frequency as its third harmonic?",
+    "options": ["200 Hz", "300 Hz", "400 Hz", "600 Hz"],
+    "answer": 1
+  },
+  {
+    "id": "9",
+    "question": "Which waveform ideally contains only a single frequency component?",
+    "options": ["Square wave", "Sawtooth wave", "Sine wave", "Triangle wave"],
+    "answer": 2
+  },
+  {
+    "id": "10",
+    "question": "What is the main reason two instruments can play the same pitch but still sound different?",
+    "options": [
+      "Their harmonic content and time envelopes differ",
+      "Their wavelengths must be different",
+      "Their fundamentals have different speeds",
+      "Their sample rates are always different"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "11",
+    "question": "What primarily happens when a digital audio recording is reversed?",
+    "options": [
+      "Every frequency becomes its reciprocal",
+      "Low frequencies become high frequencies",
+      "The sample rate is reversed",
+      "The chronological order of the samples is reversed"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "12",
+    "question": "A 48 kHz recording system has a theoretical Nyquist frequency of:",
+    "options": ["12 kHz", "24 kHz", "48 kHz", "96 kHz"],
+    "answer": 1
+  },
+  {
+    "id": "13",
+    "question": "What is aliasing?",
+    "options": [
+      "A reduction in bit depth",
+      "Stereo channels becoming identical",
+      "Frequencies above Nyquist appearing incorrectly as lower frequencies",
+      "A low-frequency room resonance"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "14",
+    "question": "Which statement about 24-bit recording is most accurate?",
+    "options": [
+      "It provides greater theoretical dynamic range and practical recording headroom",
+      "It doubles the pitch accuracy of 16-bit audio",
+      "It doubles the sample rate",
+      "It prevents all forms of clipping"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "15",
+    "question": "Why is a deep room null often difficult to fix with EQ?",
+    "options": [
+      "EQ cannot affect bass frequencies",
+      "The microphone cannot measure nulls",
+      "Filters only work above 1 kHz",
+      "Increasing level may also increase the signals that are acoustically cancelling"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "16",
+    "question": "What does a high Q value usually indicate in a parametric EQ?",
+    "options": [
+      "A very broad frequency adjustment",
+      "A relatively narrow frequency adjustment",
+      "A higher sample rate",
+      "A lower signal level"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "17",
+    "question": "A low-pass filter is designed primarily to:",
+    "options": [
+      "Attenuate frequencies below its cutoff",
+      "Remove only one narrow frequency",
+      "Pass lower frequencies while attenuating higher frequencies",
+      "Increase all frequencies equally"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "18",
+    "question": "If the distance from an ideal point source doubles in free-field conditions, SPL decreases by approximately:",
+    "options": ["6 dB", "2 dB", "3 dB", "12 dB"],
+    "answer": 0
+  },
+  {
+    "id": "19",
+    "question": "Which measurement is most useful for detecting the highest instantaneous level in a recording?",
+    "options": ["RMS level", "Frequency weighting", "RT60", "Peak level"],
+    "answer": 3
+  },
+  {
+    "id": "20",
+    "question": "Two recordings both peak at −1 dBFS. Recording A has an RMS level of −16 dBFS and Recording B has an RMS level of −7 dBFS. Which statement is most accurate?",
+    "options": [
+      "Recording A must sound louder",
+      "Recording B has much greater sustained signal energy",
+      "Both recordings have identical dynamics",
+      "Recording B must be clipped"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "21",
+    "question": "Which weighting retains considerably more low-frequency contribution than A-weighting?",
+    "options": [
+      "A-weighting",
+      "High-pass weighting",
+      "C-weighting",
+      "Nyquist weighting"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "22",
+    "question": "Why can a small speaker still communicate the pitch of a bass note whose fundamental it reproduces poorly?",
+    "options": [
+      "Higher harmonics can allow the auditory system to infer the missing fundamental",
+      "The speaker automatically lowers its sample rate",
+      "Bass frequencies convert into midrange frequencies",
+      "The wavelength becomes shorter inside the speaker"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "23",
+    "question": "A 100 Hz wave has a wavelength of approximately 3.43 m. What path difference corresponds to roughly 180° of phase shift?",
+    "options": ["0.86 m", "3.43 m", "6.86 m", "1.72 m"],
+    "answer": 3
+  },
+  {
+    "id": "24",
+    "question": "Which statement correctly describes RMS?",
+    "options": [
+      "It reports only the single highest sample",
+      "It provides a measure related to the effective magnitude of a varying signal",
+      "It measures the highest audible frequency",
+      "It represents stereo width"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "25",
+    "question": "Which situation is most likely to produce comb filtering?",
+    "options": [
+      "Increasing bit depth from 16 to 24 bits",
+      "Recording a pure sine wave",
+      "Combining a signal with a slightly delayed copy of itself",
+      "Reducing sample rate while preserving Nyquist"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "26",
+    "question": "What does RT60 describe?",
+    "options": [
+      "The approximate time for reverberant sound to decay by 60 dB",
+      "The time required for a 60 Hz wave to complete one cycle",
+      "The maximum SPL of a room",
+      "The delay between stereo channels"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "27",
+    "question": "What happens to the period of a waveform when its frequency doubles?",
+    "options": [
+      "The period doubles",
+      "The period remains unchanged",
+      "The period increases four times",
+      "The period is halved"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "28",
+    "question": "Which of these has the richest ideal harmonic series?",
+    "options": [
+      "Sine wave",
+      "Sawtooth wave",
+      "Pure 1 kHz test tone",
+      "A single-frequency oscillator"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "29",
+    "question": "Why is subwoofer placement near a corner often associated with stronger bass output?",
+    "options": [
+      "Corners increase the speed of sound",
+      "The wavelength becomes shorter",
+      "Multiple nearby boundaries can reinforce low-frequency energy",
+      "Corners eliminate room modes"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "30",
+    "question": "A 120 BPM track has a quarter-note duration of:",
+    "options": ["500 ms", "250 ms", "750 ms", "1,200 ms"],
+    "answer": 0
+  },
+  {
+    "id": "31",
+    "question": "What does the FFT primarily allow an audio analyzer to examine?",
+    "options": [
+      "File metadata",
+      "Speaker distance",
+      "Bit depth only",
+      "The distribution of signal energy across frequency"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "32",
+    "question": "Which statement about stereo bass is most accurate?",
+    "options": [
+      "All bass must legally be mono",
+      "Strong low-frequency phase differences can cause problems when stereo is summed to mono",
+      "Stereo always doubles bass SPL",
+      "Bass cannot exist in a Side signal"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "33",
+    "question": "A signal has a peak level of −2 dBFS and an RMS level of −14 dBFS. What is its crest factor?",
+    "options": ["7 dB", "16 dB", "12 dB", "−12 dB"],
+    "answer": 2
+  },
+  {
+    "id": "34",
+    "question": "Which action is usually the best first response to a severe bass null at one listening position?",
+    "options": [
+      "Test a different listening or subwoofer position",
+      "Apply a +20 dB EQ boost immediately",
+      "Increase sample rate",
+      "Replace the recording format"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "35",
+    "question": "What does a spectrum show that a standard waveform view does not show directly?",
+    "options": [
+      "Recording duration",
+      "Exact file size",
+      "Left and right channel names",
+      "How signal energy is distributed across frequencies"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "36",
+    "question": "Two equal, uncorrelated sound sources are combined. What is the approximate total level increase?",
+    "options": ["+1 dB", "+3 dB", "+6 dB", "+12 dB"],
+    "answer": 1
+  },
+  {
+    "id": "37",
+    "question": "Which statement correctly distinguishes frequency from pitch?",
+    "options": [
+      "They are exactly the same physical quantity",
+      "Pitch is measured only in Hz",
+      "Frequency is physical, while pitch is a perceptual interpretation",
+      "Frequency exists only in digital audio"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "38",
+    "question": "If a 40 Hz tone travels at 343 m/s, why is its behavior strongly affected by room dimensions?",
+    "options": [
+      "Its period is too short for the room",
+      "It travels slower than other frequencies",
+      "Its amplitude always increases near walls",
+      "Its wavelength is about 8.6 m, comparable to or larger than many room dimensions"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "39",
+    "question": "What is the primary purpose of leaving headroom while recording?",
+    "options": [
+      "To allow unexpected peaks without reaching clipping",
+      "To increase the sample rate automatically",
+      "To remove all background noise",
+      "To convert mono recordings into stereo"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "40",
+    "question": "Which statement best describes the reverse-sound experiment in the app?",
+    "options": [
+      "Reversing audio automatically changes its fundamental pitch",
+      "Reversing twice always restores the original spoken performance, even after re-recording",
+      "The challenge tests how accurately the user can imitate reversed temporal and phonetic patterns",
+      "Reverse playback removes harmonics from speech"
+    ],
+    "answer": 2
+  }
+]

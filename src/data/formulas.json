@@ -1,0 +1,731 @@
+[
+  {
+    "id": "1",
+    "title": "Wave Speed",
+    "category": "WAVES",
+    "equation": "v = f · λ",
+    "description": "Links frequency and wavelength through the propagation speed of the medium.",
+    "variables": ["v — m/s", "f — Hz", "λ — m"]
+  },
+  {
+    "id": "2",
+    "title": "Period",
+    "category": "SIGNALS",
+    "equation": "T = 1 / f",
+    "description": "Duration of a single cycle — the time-domain counterpart of frequency.",
+    "variables": ["T — s", "f — Hz"]
+  },
+  {
+    "id": "3",
+    "title": "Frequency from Period",
+    "category": "SIGNALS",
+    "equation": "f = 1 / T",
+    "description": "Calculates the number of complete cycles occurring each second.",
+    "variables": ["f — Hz", "T — s"]
+  },
+  {
+    "id": "4",
+    "title": "Wavelength",
+    "category": "WAVES",
+    "equation": "λ = v / f",
+    "description": "Calculates the physical length of one complete wave cycle.",
+    "variables": ["λ — m", "v — m/s", "f — Hz"]
+  },
+  {
+    "id": "5",
+    "title": "Frequency from Wavelength",
+    "category": "WAVES",
+    "equation": "f = v / λ",
+    "description": "Finds frequency when wavelength and propagation speed are known.",
+    "variables": ["f — Hz", "v — m/s", "λ — m"]
+  },
+  {
+    "id": "6",
+    "title": "Speed of Sound in Air",
+    "category": "ACOUSTICS",
+    "equation": "v ≈ 331.3 + 0.606 · θ",
+    "description": "Estimates the speed of sound in dry air based on temperature.",
+    "variables": ["v — m/s", "θ — °C"]
+  },
+  {
+    "id": "7",
+    "title": "Sound Pressure Level",
+    "category": "LEVEL",
+    "equation": "Lp = 20 · log10(p / p₀)",
+    "description": "Expresses measured sound pressure relative to the standard acoustic reference pressure.",
+    "variables": ["Lp — dB SPL", "p — Pa", "p₀ = 20 µPa"]
+  },
+  {
+    "id": "8",
+    "title": "Pressure from SPL",
+    "category": "LEVEL",
+    "equation": "p = p₀ · 10^(Lp / 20)",
+    "description": "Converts sound pressure level back into physical RMS pressure.",
+    "variables": ["p — Pa", "Lp — dB SPL", "p₀ = 20 µPa"]
+  },
+  {
+    "id": "9",
+    "title": "Amplitude Level Difference",
+    "category": "DECIBELS",
+    "equation": "ΔL = 20 · log10(A₂ / A₁)",
+    "description": "Calculates the decibel difference between two amplitude quantities.",
+    "variables": ["ΔL — dB", "A₁ — amplitude", "A₂ — amplitude"]
+  },
+  {
+    "id": "10",
+    "title": "Power Level Difference",
+    "category": "DECIBELS",
+    "equation": "ΔL = 10 · log10(P₂ / P₁)",
+    "description": "Calculates the decibel difference between two power quantities.",
+    "variables": ["ΔL — dB", "P₁ — W", "P₂ — W"]
+  },
+  {
+    "id": "11",
+    "title": "Intensity",
+    "category": "ACOUSTICS",
+    "equation": "I = P / A",
+    "description": "Describes acoustic power distributed across a given surface area.",
+    "variables": ["I — W/m²", "P — W", "A — m²"]
+  },
+  {
+    "id": "12",
+    "title": "Inverse-Square Intensity",
+    "category": "PROPAGATION",
+    "equation": "I₂ = I₁ · (r₁ / r₂)²",
+    "description": "Estimates how sound intensity changes with distance from an ideal point source.",
+    "variables": ["I₁, I₂ — W/m²", "r₁, r₂ — m"]
+  },
+  {
+    "id": "13",
+    "title": "Level Change with Distance",
+    "category": "PROPAGATION",
+    "equation": "ΔL = 20 · log10(r₁ / r₂)",
+    "description": "Calculates the theoretical SPL change between two distances in free-field conditions.",
+    "variables": ["ΔL — dB", "r₁ — m", "r₂ — m"]
+  },
+  {
+    "id": "14",
+    "title": "Room Mode — Axial",
+    "category": "ROOM MODES",
+    "equation": "fₙ = n · v / (2L)",
+    "description": "Calculates axial resonances between two parallel room boundaries.",
+    "variables": ["fₙ — Hz", "n — mode number", "v — m/s", "L — m"]
+  },
+  {
+    "id": "15",
+    "title": "General Room Mode",
+    "category": "ROOM MODES",
+    "equation": "f = (v / 2) · √[(nx/Lx)² + (ny/Ly)² + (nz/Lz)²]",
+    "description": "Calculates modal frequencies using all three room dimensions.",
+    "variables": [
+      "f — Hz",
+      "nx, ny, nz — mode orders",
+      "Lx, Ly, Lz — m",
+      "v — m/s"
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Phase Shift from Distance",
+    "category": "PHASE",
+    "equation": "φ = 360° · Δd / λ",
+    "description": "Converts a path-length difference into phase difference for a given wavelength.",
+    "variables": ["φ — degrees", "Δd — m", "λ — m"]
+  },
+  {
+    "id": "17",
+    "title": "Phase Shift from Time Delay",
+    "category": "PHASE",
+    "equation": "φ = 360° · f · Δt",
+    "description": "Calculates phase offset produced by a time delay at a particular frequency.",
+    "variables": ["φ — degrees", "f — Hz", "Δt — s"]
+  },
+  {
+    "id": "18",
+    "title": "Time Delay from Distance",
+    "category": "TIMING",
+    "equation": "t = d / v",
+    "description": "Calculates how long sound takes to travel a specified distance.",
+    "variables": ["t — s", "d — m", "v — m/s"]
+  },
+  {
+    "id": "19",
+    "title": "Distance from Delay",
+    "category": "TIMING",
+    "equation": "d = v · t",
+    "description": "Converts sound-travel time into distance.",
+    "variables": ["d — m", "v — m/s", "t — s"]
+  },
+  {
+    "id": "20",
+    "title": "Harmonic Frequency",
+    "category": "HARMONICS",
+    "equation": "fₙ = n · f₀",
+    "description": "Calculates the frequency of any harmonic from the fundamental.",
+    "variables": ["fₙ — Hz", "n — harmonic number", "f₀ — Hz"]
+  },
+  {
+    "id": "21",
+    "title": "Octave Relationship",
+    "category": "FREQUENCY",
+    "equation": "f₂ = f₁ · 2ⁿ",
+    "description": "Calculates frequency after moving a specified number of octaves.",
+    "variables": ["f₁ — Hz", "f₂ — Hz", "n — octaves"]
+  },
+  {
+    "id": "22",
+    "title": "Semitone Frequency Ratio",
+    "category": "MUSIC",
+    "equation": "f₂ = f₁ · 2^(n / 12)",
+    "description": "Calculates a frequency after moving a number of equal-tempered semitones.",
+    "variables": ["f₁ — Hz", "f₂ — Hz", "n — semitones"]
+  },
+  {
+    "id": "23",
+    "title": "BPM to Beat Duration",
+    "category": "TEMPO",
+    "equation": "t = 60 / BPM",
+    "description": "Calculates the duration of one beat in seconds.",
+    "variables": ["t — s", "BPM — beats/min"]
+  },
+  {
+    "id": "24",
+    "title": "BPM to Milliseconds",
+    "category": "TEMPO",
+    "equation": "t = 60,000 / BPM",
+    "description": "Calculates the duration of one quarter-note beat in milliseconds.",
+    "variables": ["t — ms", "BPM — beats/min"]
+  },
+  {
+    "id": "25",
+    "title": "Note Duration",
+    "category": "TEMPO",
+    "equation": "tₙ = 60,000 · 4 / (BPM · N)",
+    "description": "Calculates note duration for common rhythmic divisions.",
+    "variables": [
+      "tₙ — ms",
+      "BPM — beats/min",
+      "N — note denominator",
+      "Example:",
+      "N = 4 → quarter note",
+      "N = 8 → eighth note",
+      "N = 16 → sixteenth note"
+    ]
+  },
+  {
+    "id": "26",
+    "title": "RMS Value",
+    "category": "SIGNALS",
+    "equation": "xRMS = √[(Σx²) / N]",
+    "description": "Calculates the effective magnitude of a varying signal.",
+    "variables": ["xRMS — RMS amplitude", "x — sample value", "N — samples"]
+  },
+  {
+    "id": "27",
+    "title": "Sine RMS",
+    "category": "SIGNALS",
+    "equation": "ARMS = Apeak / √2",
+    "description": "Converts peak amplitude of an ideal sine wave to RMS amplitude.",
+    "variables": ["ARMS — RMS amplitude", "Apeak — peak amplitude"]
+  },
+  {
+    "id": "28",
+    "title": "Crest Factor",
+    "category": "DYNAMICS",
+    "equation": "CF = Lpeak − LRMS",
+    "description": "Shows the difference between peak and RMS levels.",
+    "variables": ["CF — dB", "Lpeak — dB", "LRMS — dB"]
+  },
+  {
+    "id": "29",
+    "title": "Nyquist Frequency",
+    "category": "DIGITAL AUDIO",
+    "equation": "fN = Fs / 2",
+    "description": "Defines the highest theoretical frequency boundary for a sampled system.",
+    "variables": ["fN — Hz", "Fs — samples/s"]
+  },
+  {
+    "id": "30",
+    "title": "FFT Frequency Resolution",
+    "category": "ANALYSIS",
+    "equation": "Δf = Fs / N",
+    "description": "Calculates the spacing between FFT frequency bins.",
+    "variables": ["Δf — Hz", "Fs — samples/s", "N — FFT size"]
+  },
+  {
+    "id": "31",
+    "title": "Theoretical PCM Dynamic Range",
+    "category": "DIGITAL AUDIO",
+    "equation": "DR ≈ 6.02 · N + 1.76",
+    "description": "Estimates the ideal dynamic range of linear PCM audio from its bit depth.",
+    "variables": ["DR — dB", "N — bits"]
+  },
+  {
+    "id": "32",
+    "title": "Digital Sample Count",
+    "category": "DIGITAL AUDIO",
+    "equation": "N = Fs · t",
+    "description": "Calculates how many samples are stored during a given recording duration.",
+    "variables": ["N — samples", "Fs — samples/s", "t — s"]
+  },
+  {
+    "id": "33",
+    "title": "Uncompressed PCM File Size",
+    "category": "DIGITAL AUDIO",
+    "equation": "Size = Fs · B · C · t / 8",
+    "description": "Estimates the raw size of an uncompressed PCM recording.",
+    "variables": [
+      "Size — bytes",
+      "Fs — samples/s",
+      "B — bits/sample",
+      "C — channels",
+      "t — s"
+    ]
+  },
+  {
+    "id": "34",
+    "title": "Filter Octave Distance",
+    "category": "FILTERS",
+    "equation": "n = log2(f₂ / f₁)",
+    "description": "Calculates the number of octaves between two frequencies.",
+    "variables": ["n — octaves", "f₁ — Hz", "f₂ — Hz"]
+  },
+  {
+    "id": "35",
+    "title": "Q Factor",
+    "category": "FILTERS",
+    "equation": "Q = f₀ / BW",
+    "description": "Describes how narrow or broad a resonant or filter band is.",
+    "variables": ["Q — dimensionless", "f₀ — Hz", "BW — Hz"]
+  },
+  {
+    "id": "36",
+    "title": "Bandwidth from Q",
+    "category": "FILTERS",
+    "equation": "BW = f₀ / Q",
+    "description": "Calculates approximate bandwidth around a filter's center frequency.",
+    "variables": ["BW — Hz", "f₀ — Hz", "Q — dimensionless"]
+  },
+  {
+    "id": "37",
+    "title": "Sound Intensity Level",
+    "category": "LEVEL",
+    "equation": "LI = 10 · log10(I / I₀)",
+    "description": "Expresses acoustic intensity relative to the standard reference intensity.",
+    "variables": ["LI — dB", "I — W/m²", "I₀ = 10⁻¹² W/m²"]
+  },
+  {
+    "id": "38",
+    "title": "Sound Power Level",
+    "category": "POWER",
+    "equation": "LW = 10 · log10(W / W₀)",
+    "description": "Expresses acoustic power relative to the standard reference sound power.",
+    "variables": ["LW — dB", "W — W", "W₀ = 10⁻¹² W"]
+  },
+  {
+    "id": "39",
+    "title": "Pressure Ratio from Decibels",
+    "category": "DECIBELS",
+    "equation": "p₂ / p₁ = 10^(ΔL / 20)",
+    "description": "Converts a decibel difference into a sound-pressure or amplitude ratio.",
+    "variables": ["p₁, p₂ — Pa", "ΔL — dB"]
+  },
+  {
+    "id": "40",
+    "title": "Power Ratio from Decibels",
+    "category": "DECIBELS",
+    "equation": "P₂ / P₁ = 10^(ΔL / 10)",
+    "description": "Converts a decibel difference into a power ratio.",
+    "variables": ["P₁, P₂ — W", "ΔL — dB"]
+  },
+  {
+    "id": "41",
+    "title": "Combined Sound Level",
+    "category": "LEVEL",
+    "equation": "Ltotal = 10 · log10(Σ10^(Li / 10))",
+    "description": "Combines multiple independent sound levels into one total level.",
+    "variables": ["Ltotal — dB", "Li — individual levels in dB"]
+  },
+  {
+    "id": "42",
+    "title": "Two Equal Independent Sources",
+    "category": "LEVEL",
+    "equation": "Ltotal ≈ L + 3.01 dB",
+    "description": "Shows the level increase when two equal, uncorrelated sound sources are combined.",
+    "variables": ["L — dB", "Ltotal — dB"]
+  },
+  {
+    "id": "43",
+    "title": "Linear Gain from dB",
+    "category": "GAIN",
+    "equation": "G = 10^(ΔL / 20)",
+    "description": "Converts an amplitude gain expressed in decibels into a linear multiplier.",
+    "variables": ["G — linear gain", "ΔL — dB"]
+  },
+  {
+    "id": "44",
+    "title": "dB from Linear Gain",
+    "category": "GAIN",
+    "equation": "ΔL = 20 · log10(G)",
+    "description": "Converts a linear amplitude multiplier into decibels.",
+    "variables": ["ΔL — dB", "G — linear gain"]
+  },
+  {
+    "id": "45",
+    "title": "Digital Level in dBFS",
+    "category": "DIGITAL LEVEL",
+    "equation": "L = 20 · log10(|x| / xFS)",
+    "description": "Expresses digital signal amplitude relative to full scale.",
+    "variables": [
+      "L — dBFS",
+      "x — signal amplitude",
+      "xFS — full-scale amplitude"
+    ]
+  },
+  {
+    "id": "46",
+    "title": "Digital Headroom",
+    "category": "DIGITAL LEVEL",
+    "equation": "H = 0 dBFS − Lpeak",
+    "description": "Calculates the remaining peak margin before digital full scale.",
+    "variables": ["H — dB", "Lpeak — dBFS"]
+  },
+  {
+    "id": "47",
+    "title": "Signal-to-Noise Ratio",
+    "category": "SIGNAL QUALITY",
+    "equation": "SNR = 20 · log10(Asignal / Anoise)",
+    "description": "Compares signal amplitude with background-noise amplitude.",
+    "variables": [
+      "SNR — dB",
+      "Asignal — signal RMS amplitude",
+      "Anoise — noise RMS amplitude"
+    ]
+  },
+  {
+    "id": "48",
+    "title": "Total Harmonic Distortion",
+    "category": "DISTORTION",
+    "equation": "THD = √(V₂² + V₃² + ... + Vₙ²) / V₁ × 100%",
+    "description": "Measures harmonic distortion relative to the fundamental component.",
+    "variables": [
+      "THD — %",
+      "V₁ — fundamental RMS amplitude",
+      "V₂...Vₙ — harmonic RMS amplitudes"
+    ]
+  },
+  {
+    "id": "49",
+    "title": "Angular Frequency",
+    "category": "WAVES",
+    "equation": "ω = 2πf",
+    "description": "Converts ordinary frequency into angular frequency.",
+    "variables": ["ω — rad/s", "f — Hz"]
+  },
+  {
+    "id": "50",
+    "title": "Wavenumber",
+    "category": "WAVES",
+    "equation": "k = 2π / λ",
+    "description": "Describes how rapidly wave phase changes with distance.",
+    "variables": ["k — rad/m", "λ — m"]
+  },
+  {
+    "id": "51",
+    "title": "Phase Velocity",
+    "category": "WAVES",
+    "equation": "v = ω / k",
+    "description": "Links angular frequency and wavenumber through wave propagation speed.",
+    "variables": ["v — m/s", "ω — rad/s", "k — rad/m"]
+  },
+  {
+    "id": "52",
+    "title": "Samples per Cycle",
+    "category": "DIGITAL AUDIO",
+    "equation": "Ncycle = Fs / f",
+    "description": "Calculates how many digital samples represent one period of a tone.",
+    "variables": ["Ncycle — samples", "Fs — samples/s", "f — Hz"]
+  },
+  {
+    "id": "53",
+    "title": "Frequency from Samples per Cycle",
+    "category": "DIGITAL AUDIO",
+    "equation": "f = Fs / Ncycle",
+    "description": "Calculates tone frequency from its period measured in samples.",
+    "variables": ["f — Hz", "Fs — samples/s", "Ncycle — samples"]
+  },
+  {
+    "id": "54",
+    "title": "Delay in Samples",
+    "category": "DIGITAL AUDIO",
+    "equation": "Ndelay = Fs · t",
+    "description": "Converts a time delay into a number of digital samples.",
+    "variables": ["Ndelay — samples", "Fs — samples/s", "t — s"]
+  },
+  {
+    "id": "55",
+    "title": "Delay from Phase Shift",
+    "category": "PHASE",
+    "equation": "Δt = φ / (360° · f)",
+    "description": "Calculates the time delay corresponding to a phase difference at one frequency.",
+    "variables": ["Δt — s", "φ — degrees", "f — Hz"]
+  },
+  {
+    "id": "56",
+    "title": "Comb-Filter Spacing",
+    "category": "FILTERS",
+    "equation": "Δf = 1 / τ",
+    "description": "Calculates the spacing between repeating peaks or notches created by a delayed copy of a signal.",
+    "variables": ["Δf — Hz", "τ — s"]
+  },
+  {
+    "id": "57",
+    "title": "Delay from Comb Spacing",
+    "category": "FILTERS",
+    "equation": "τ = 1 / Δf",
+    "description": "Calculates the delay that produces a given comb-filter frequency spacing.",
+    "variables": ["τ — s", "Δf — Hz"]
+  },
+  {
+    "id": "58",
+    "title": "Quarter Wavelength",
+    "category": "ACOUSTICS",
+    "equation": "L = λ / 4 = v / (4f)",
+    "description": "Calculates one quarter of a wavelength, useful in resonance and acoustic-treatment estimates.",
+    "variables": ["L — m", "λ — m", "v — m/s", "f — Hz"]
+  },
+  {
+    "id": "59",
+    "title": "Half Wavelength",
+    "category": "ACOUSTICS",
+    "equation": "L = λ / 2 = v / (2f)",
+    "description": "Calculates one half of a wavelength for standing-wave and resonance analysis.",
+    "variables": ["L — m", "λ — m", "v — m/s", "f — Hz"]
+  },
+  {
+    "id": "60",
+    "title": "Quarter-Wave Resonance",
+    "category": "RESONANCE",
+    "equation": "f = v / (4L)",
+    "description": "Estimates the fundamental resonance of a tube closed at one end or a quarter-wave resonator.",
+    "variables": ["f — Hz", "v — m/s", "L — m"]
+  },
+  {
+    "id": "61",
+    "title": "Half-Wave Resonance",
+    "category": "RESONANCE",
+    "equation": "f = v / (2L)",
+    "description": "Estimates the fundamental resonance of an ideal open-open or closed-closed resonant path.",
+    "variables": ["f — Hz", "v — m/s", "L — m"]
+  },
+  {
+    "id": "62",
+    "title": "Helmholtz Resonance",
+    "category": "RESONANCE",
+    "equation": "fH = (v / 2π) · √(A / (V · Leff))",
+    "description": "Estimates the resonance frequency of a cavity connected through a neck or port.",
+    "variables": ["fH — Hz", "v — m/s", "A — m²", "V — m³", "Leff — m"]
+  },
+  {
+    "id": "63",
+    "title": "Equivalent Absorption Area",
+    "category": "ROOM ACOUSTICS",
+    "equation": "Aeq = Σ(αi · Si)",
+    "description": "Calculates the total equivalent absorption area of room surfaces.",
+    "variables": ["Aeq — m² sabins", "αi — absorption coefficient", "Si — m²"]
+  },
+  {
+    "id": "64",
+    "title": "Sabine Reverberation Time",
+    "category": "ROOM ACOUSTICS",
+    "equation": "RT60 = 0.161 · V / Aeq",
+    "description": "Estimates the time required for sound level in a diffuse room to decay by 60 dB.",
+    "variables": ["RT60 — s", "V — m³", "Aeq — m² sabins"]
+  },
+  {
+    "id": "65",
+    "title": "Schroeder Frequency",
+    "category": "ROOM ACOUSTICS",
+    "equation": "fs ≈ 2000 · √(RT60 / V)",
+    "description": "Estimates the transition between distinct room-mode behavior and a denser reverberant field.",
+    "variables": ["fs — Hz", "RT60 — s", "V — m³"]
+  },
+  {
+    "id": "66",
+    "title": "Acoustic Impedance",
+    "category": "ACOUSTICS",
+    "equation": "Z = p / u",
+    "description": "Describes the relationship between acoustic pressure and particle velocity.",
+    "variables": ["Z — Pa·s/m", "p — Pa", "u — m/s"]
+  },
+  {
+    "id": "67",
+    "title": "Plane-Wave Particle Velocity",
+    "category": "ACOUSTICS",
+    "equation": "u = p / (ρ · v)",
+    "description": "Estimates particle velocity from sound pressure in an ideal plane wave.",
+    "variables": ["u — m/s", "p — Pa", "ρ — kg/m³", "v — m/s"]
+  },
+  {
+    "id": "68",
+    "title": "Plane-Wave Intensity",
+    "category": "ACOUSTICS",
+    "equation": "I = pRMS² / (ρ · v)",
+    "description": "Calculates acoustic intensity from RMS sound pressure for an ideal plane wave.",
+    "variables": ["I — W/m²", "pRMS — Pa", "ρ — kg/m³", "v — m/s"]
+  },
+  {
+    "id": "69",
+    "title": "Spherical-Wave Intensity",
+    "category": "PROPAGATION",
+    "equation": "I = W / (4πr²)",
+    "description": "Estimates sound intensity at a distance from an ideal omnidirectional point source.",
+    "variables": ["I — W/m²", "W — W", "r — m"]
+  },
+  {
+    "id": "70",
+    "title": "Sound Power from Intensity",
+    "category": "PROPAGATION",
+    "equation": "W = 4πr² · I",
+    "description": "Calculates acoustic power from measured intensity around an ideal spherical source.",
+    "variables": ["W — W", "I — W/m²", "r — m"]
+  },
+  {
+    "id": "71",
+    "title": "Reflection Coefficient",
+    "category": "BOUNDARIES",
+    "equation": "R = (Z₂ − Z₁) / (Z₂ + Z₁)",
+    "description": "Estimates the pressure reflection coefficient at a boundary between two acoustic impedances.",
+    "variables": [
+      "R — dimensionless",
+      "Z₁ — acoustic impedance",
+      "Z₂ — acoustic impedance"
+    ]
+  },
+  {
+    "id": "72",
+    "title": "Reflected Intensity Ratio",
+    "category": "BOUNDARIES",
+    "equation": "RI = |R|²",
+    "description": "Calculates the fraction of incident intensity reflected by a boundary.",
+    "variables": ["RI — ratio", "R — pressure reflection coefficient"]
+  },
+  {
+    "id": "73",
+    "title": "Absorption Coefficient",
+    "category": "ABSORPTION",
+    "equation": "α = 1 − RI",
+    "description": "Estimates the absorbed fraction when transmission through the boundary can be neglected.",
+    "variables": ["α — dimensionless", "RI — reflected intensity ratio"]
+  },
+  {
+    "id": "74",
+    "title": "Transmission Loss",
+    "category": "ISOLATION",
+    "equation": "TL = 10 · log10(1 / τ)",
+    "description": "Expresses how strongly a barrier reduces transmitted acoustic power.",
+    "variables": ["TL — dB", "τ — transmission coefficient"]
+  },
+  {
+    "id": "75",
+    "title": "Directivity Index",
+    "category": "DIRECTIVITY",
+    "equation": "DI = 10 · log10(Q)",
+    "description": "Converts a source directivity factor into decibels.",
+    "variables": ["DI — dB", "Q — directivity factor"]
+  },
+  {
+    "id": "76",
+    "title": "Critical Distance",
+    "category": "ROOM ACOUSTICS",
+    "equation": "Dc ≈ 0.057 · √(Q · V / RT60)",
+    "description": "Estimates the distance where direct and reverberant sound energies become approximately equal.",
+    "variables": ["Dc — m", "Q — directivity factor", "V — m³", "RT60 — s"]
+  },
+  {
+    "id": "77",
+    "title": "Beat Frequency",
+    "category": "FREQUENCY",
+    "equation": "fbeat = |f₁ − f₂|",
+    "description": "Calculates the amplitude-fluctuation rate produced by two nearby frequencies.",
+    "variables": ["fbeat — Hz", "f₁ — Hz", "f₂ — Hz"]
+  },
+  {
+    "id": "78",
+    "title": "Frequency Difference in Cents",
+    "category": "PITCH",
+    "equation": "cents = 1200 · log2(f₂ / f₁)",
+    "description": "Expresses the pitch interval between two frequencies in cents.",
+    "variables": ["cents — cents", "f₁ — Hz", "f₂ — Hz"]
+  },
+  {
+    "id": "79",
+    "title": "Frequency from Cents Offset",
+    "category": "PITCH",
+    "equation": "f₂ = f₁ · 2^(c / 1200)",
+    "description": "Calculates a new frequency after applying a pitch offset in cents.",
+    "variables": ["f₂ — Hz", "f₁ — Hz", "c — cents"]
+  },
+  {
+    "id": "80",
+    "title": "MIDI Note Frequency",
+    "category": "PITCH",
+    "equation": "f = 440 · 2^((n − 69) / 12)",
+    "description": "Converts a MIDI note number into its equal-tempered frequency.",
+    "variables": ["f — Hz", "n — MIDI note number"]
+  },
+  {
+    "id": "81",
+    "title": "MIDI Note Number from Frequency",
+    "category": "PITCH",
+    "equation": "n = 69 + 12 · log2(f / 440)",
+    "description": "Calculates the corresponding equal-tempered MIDI note number from frequency.",
+    "variables": ["n — MIDI note number", "f — Hz"]
+  },
+  {
+    "id": "82",
+    "title": "Mid Signal",
+    "category": "STEREO",
+    "equation": "M = (L + R) / 2",
+    "description": "Extracts the center or common information from left and right channels.",
+    "variables": ["M — Mid signal", "L — Left channel", "R — Right channel"]
+  },
+  {
+    "id": "83",
+    "title": "Side Signal",
+    "category": "STEREO",
+    "equation": "S = (L − R) / 2",
+    "description": "Extracts the difference information responsible for much of stereo width.",
+    "variables": ["S — Side signal", "L — Left channel", "R — Right channel"]
+  },
+  {
+    "id": "84",
+    "title": "Left from Mid/Side",
+    "category": "STEREO",
+    "equation": "L = M + S",
+    "description": "Reconstructs the left channel from Mid and Side signals.",
+    "variables": ["L — Left channel", "M — Mid signal", "S — Side signal"]
+  },
+  {
+    "id": "85",
+    "title": "Right from Mid/Side",
+    "category": "STEREO",
+    "equation": "R = M − S",
+    "description": "Reconstructs the right channel from Mid and Side signals.",
+    "variables": ["R — Right channel", "M — Mid signal", "S — Side signal"]
+  },
+  {
+    "id": "86",
+    "title": "Doppler Effect",
+    "category": "PROPAGATION",
+    "equation": "f′ = f · (v + vo) / (v − vs)",
+    "description": "Calculates observed frequency when the listener or source moves relative to the medium.",
+    "variables": [
+      "f′ — observed frequency, Hz",
+      "f — source frequency, Hz",
+      "v — speed of sound, m/s",
+      "vo — listener velocity, m/s",
+      "vs — source velocity, m/s"
+    ]
+  }
+]

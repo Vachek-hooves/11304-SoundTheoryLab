@@ -1,0 +1,71 @@
+import { Platform, StyleSheet } from 'react-native';
+export const colors = {
+  bg: '#030708',
+  card: '#101516',
+  border: '#242a2b',
+  text: '#f1eee6',
+  muted: '#878985',
+  gold: '#e6b75f',
+  pale: '#f7dda0',
+  teal: '#20cfbb',
+  danger: '#eb8657',
+};
+export const mono = Platform.select({ ios: 'Menlo', android: 'monospace' });
+export const styles = StyleSheet.create({
+  row: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  between: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 10,
+  },
+  title: {
+    fontSize: 29,
+    fontWeight: '600',
+    color: colors.text,
+    letterSpacing: -1,
+  },
+  heading: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: colors.text,
+    letterSpacing: -0.4,
+  },
+  text: { fontSize: 14, color: colors.text, lineHeight: 22 },
+  muted: { fontSize: 13, color: colors.muted, lineHeight: 21 },
+  label: {
+    fontSize: 9,
+    color: colors.teal,
+    fontFamily: mono,
+    letterSpacing: 1.7,
+    textTransform: 'uppercase',
+    lineHeight: 17,
+  },
+  card: {
+    backgroundColor: colors.card,
+    borderColor: colors.border,
+    borderWidth: 1,
+    borderRadius: 22,
+    padding: 17,
+    gap: 12,
+  },
+  input: {
+    backgroundColor: '#090d0e',
+    color: colors.text,
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderRadius: 15,
+    padding: 14,
+    fontSize: 16,
+    minHeight: 49,
+  },
+  chip: {
+    paddingHorizontal: 12,
+    paddingVertical: 7,
+    backgroundColor: '#212421',
+    borderRadius: 11,
+    borderWidth: 1,
+    borderColor: '#393328',
+  },
+  chipText: { fontSize: 11, color: colors.pale },
+});
