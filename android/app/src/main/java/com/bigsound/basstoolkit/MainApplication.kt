@@ -1,4 +1,4 @@
-package com.bigsoundbasstoolkit
+package com.bigsound.basstoolkit
 
 import android.app.Application
 import com.facebook.react.PackageList
