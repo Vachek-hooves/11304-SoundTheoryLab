@@ -48,7 +48,12 @@ export function LearnScreen() {
         </View>
         <Tag>STREAK {streak}</Tag>
       </View>
-      <Card style={{ backgroundColor: '#20231a', borderColor: '#443c29' }}>
+      <Card
+        style={{
+          backgroundColor: colors.surfaceHighlight,
+          borderColor: colors.border,
+        }}
+      >
         <Text style={s.label}>
           ● DAILY QUIZ · {state.quiz ? 'PAUSED' : 'READY'}
         </Text>
@@ -147,7 +152,7 @@ export function ModuleScreen({ route, navigation }: Props<'Module'>) {
           </Pressable>
         }
       />
-      <Card style={{ borderColor: '#403726' }}>
+      <Card style={{ borderColor: colors.border }}>
         <Text style={s.label}>{module.lessons.length} LESSONS</Text>
         <Text style={s.heading}>{module.title}</Text>
         <Progress value={done / module.lessons.length} />
@@ -238,7 +243,7 @@ export function LessonScreen({ route, navigation }: Props<'Lesson'>) {
                     {
                       color: colors.pale,
                       padding: 12,
-                      backgroundColor: '#151712',
+                      backgroundColor: colors.input,
                       borderRadius: 10,
                     },
                   ]

@@ -287,8 +287,8 @@ export function ReverseScreen() {
                 <LinearGradient
                   colors={
                     recording
-                      ? ['#643027', '#3b1e17']
-                      : [colors.pale, '#d6a449']
+                      ? [colors.surfaceHighlight, colors.button]
+                      : [colors.buttonHighlight, colors.button]
                   }
                   style={{
                     width: 78,
@@ -303,7 +303,7 @@ export function ReverseScreen() {
                       width: recording ? 24 : 29,
                       height: recording ? 24 : 29,
                       borderRadius: recording ? 6 : 20,
-                      backgroundColor: recording ? '#ff805d' : '#382b12',
+                      backgroundColor: recording ? colors.danger : colors.text,
                     }}
                   />
                 </LinearGradient>

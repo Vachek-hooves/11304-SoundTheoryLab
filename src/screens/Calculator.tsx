@@ -143,7 +143,12 @@ export function CalculatorScreen({
         <Text style={{ color: colors.danger }}>{result.error}</Text>
       )}
       {result.value !== undefined ? (
-        <Card style={{ borderColor: '#14534b', backgroundColor: '#0c2221' }}>
+        <Card
+          style={{
+            borderColor: colors.border,
+            backgroundColor: colors.surfaceHighlight,
+          }}
+        >
           <Text style={s.label}>RESULT</Text>
           <Text
             selectable

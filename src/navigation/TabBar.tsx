@@ -19,8 +19,8 @@ function TabBar({ state, navigation }: BottomTabBarProps) {
         alignSelf: 'center',
         borderRadius: 27,
         borderWidth: 1,
-        borderColor: '#3a4140',
-        backgroundColor: '#0e1516f5',
+        borderColor: colors.border,
+        backgroundColor: colors.card,
         padding: 7,
         flexDirection: 'row',
         justifyContent: 'space-around',
@@ -51,11 +51,14 @@ function TabBar({ state, navigation }: BottomTabBarProps) {
               borderRadius: 20,
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundColor: focused ? '#2a281f' : 'transparent',
+              backgroundColor: focused ? colors.button : 'transparent',
               gap: 4,
             }}
           >
-            <Icon name={route.name} color={focused ? colors.pale : '#777e79'} />
+            <Icon
+              name={route.name}
+              color={focused ? colors.pale : colors.muted}
+            />
             {focused && (
               <View
                 style={{

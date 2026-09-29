@@ -1,13 +1,17 @@
 import { Platform, StyleSheet } from 'react-native';
 export const colors = {
-  bg: '#030708',
-  card: '#101516',
-  border: '#242a2b',
+  bg: '#4a1027',
+  card: '#380c1e',
+  border: '#79334d',
   text: '#f1eee6',
-  muted: '#878985',
+  muted: '#c7a9b4',
   gold: '#e6b75f',
   pale: '#f7dda0',
   teal: '#20cfbb',
+  button: '#300818',
+  buttonHighlight: '#520e29',
+  input: '#2b0917',
+  surfaceHighlight: '#591630',
   danger: '#eb8657',
 };
 export const mono = Platform.select({ ios: 'Menlo', android: 'monospace' });
@@ -50,7 +54,7 @@ export const styles = StyleSheet.create({
     gap: 12,
   },
   input: {
-    backgroundColor: '#090d0e',
+    backgroundColor: colors.input,
     color: colors.text,
     borderWidth: 1,
     borderColor: colors.border,
@@ -62,10 +66,10 @@ export const styles = StyleSheet.create({
   chip: {
     paddingHorizontal: 12,
     paddingVertical: 7,
-    backgroundColor: '#212421',
+    backgroundColor: colors.button,
     borderRadius: 11,
     borderWidth: 1,
-    borderColor: '#393328',
+    borderColor: colors.border,
   },
   chipText: { fontSize: 11, color: colors.pale },
 });

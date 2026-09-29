@@ -207,7 +207,7 @@ export function QuizResultScreen({ route, navigation }: Props<'QuizResult'>) {
         style={{
           alignItems: 'center',
           paddingVertical: 26,
-          borderColor: '#403726',
+          borderColor: colors.border,
         }}
       >
         <Ring value={score / 5} label="SCORE" />

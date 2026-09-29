@@ -1,13 +1,6 @@
 import { useLayout, useResponsiveStyles } from '../hooks/useLayout';
 import React, { useState } from 'react';
-import {
-  Image,
-  ImageBackground,
-  ScrollView,
-  Text,
-  View,
-  Pressable,
-} from 'react-native';
+import { Image, ScrollView, Text, View, Pressable } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { GradientSurface as LinearGradient } from '../components/GradientSurface';
 import { WebView } from 'react-native-webview';
@@ -15,20 +8,21 @@ import { Entrance } from '../components/Entrance';
 import { Button } from '../components/UI';
 import { colors } from '../theme';
 import { useAppState } from '../state/AppState';
-const loaderHTML = `<html><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;background:transparent;color:#9a9c8c;font:9px monospace;letter-spacing:2px}.track{height:2px;background:#39413b;margin-bottom:12px}.fill{height:2px;width:0;background:linear-gradient(90deg,#f6d48a,#16d3bd);animation:load 4s linear forwards}@keyframes load{to{width:100%}}</style><div class="track"><div class="fill"></div></div>CALIBRATING ACOUSTIC<br>ENGINE…<script>setTimeout(()=>window.ReactNativeWebView.postMessage('complete'),4000)</script></html>`;
+const loaderHTML = `<html><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;background:transparent;color:#c7a9b4;font:9px monospace;letter-spacing:2px}.track{height:2px;background:#79334d;margin-bottom:12px}.fill{height:2px;width:0;background:linear-gradient(90deg,#f6d48a,#16d3bd);animation:load 4s linear forwards}@keyframes load{to{width:100%}}</style><div class="track"><div class="fill"></div></div>CALIBRATING ACOUSTIC<br>ENGINE…<script>setTimeout(()=>window.ReactNativeWebView.postMessage('complete'),4000)</script></html>`;
 export function Loader({ onDone }: { onDone: () => void }) {
   const s = useResponsiveStyles();
   const layout = useLayout();
   return (
-    <ImageBackground
-      source={require('../assets/Loader (1).png')}
-      style={{ flex: 1, backgroundColor: '#000' }}
-      resizeMode="cover"
+    <LinearGradient
+      colors={['#18060e', '#3b0b20', '#240713']}
+      locations={[0, 0.55, 1]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
+      style={{ flex: 1, backgroundColor: colors.bg }}
     >
       <View
         style={{
           flex: 1,
-          backgroundColor: '#0009',
           justifyContent: 'center',
           alignItems: 'center',
         }}
@@ -42,10 +36,10 @@ export function Loader({ onDone }: { onDone: () => void }) {
           resizeMode="contain"
         />
         <Text style={[s.title, { color: colors.gold, marginTop: 14 }]}>
-          Big Sound
+          Sound Theory Lab
         </Text>
-        <Text style={[s.label, { letterSpacing: 5, marginTop: 8 }]}>
-          BASS TOOLKIT
+        <Text style={[s.label, { letterSpacing: 3, marginTop: 8 }]}>
+          LEARN · EXPLORE · EXPERIMENT
         </Text>
         <View style={{ width: 190, height: 64, marginTop: 30 }}>
           <WebView
@@ -60,7 +54,7 @@ export function Loader({ onDone }: { onDone: () => void }) {
           />
         </View>
       </View>
-    </ImageBackground>
+    </LinearGradient>
   );
 }
 const pages = [
@@ -92,7 +86,9 @@ export function Onboarding() {
   const done = () => update(v => ({ ...v, onboarded: true }));
   const page = pages[index];
   return (
-    <View style={{ flex: 1, backgroundColor: '#000', paddingTop: insets.top }}>
+    <View
+      style={{ flex: 1, backgroundColor: colors.bg, paddingTop: insets.top }}
+    >
       <ScrollView
         contentContainerStyle={{
           flexGrow: 1,
@@ -123,7 +119,7 @@ export function Onboarding() {
               }}
             />
             <LinearGradient
-              colors={['transparent', '#000']}
+              colors={['transparent', colors.bg]}
               style={{
                 position: 'absolute',
                 bottom: 0,
@@ -179,7 +175,7 @@ export function Onboarding() {
                   width: i === index ? 25 : 5,
                   height: 5,
                   borderRadius: 4,
-                  backgroundColor: i === index ? colors.teal : '#323431',
+                  backgroundColor: i === index ? colors.teal : colors.border,
                 }}
               />
             ))}

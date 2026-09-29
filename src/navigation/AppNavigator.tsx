@@ -50,7 +50,7 @@ export function AppNavigator() {
           alignItems: 'center',
         }}
       >
-        <Text style={{ color: colors.pale }}>Opening your toolkit…</Text>
+        <Text style={{ color: colors.pale }}>Opening Sound Theory Lab…</Text>
       </View>
     );
   }

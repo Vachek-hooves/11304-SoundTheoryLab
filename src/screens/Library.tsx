@@ -82,9 +82,9 @@ export function LibraryScreen() {
                   style={{
                     padding: 15,
                     borderRadius: 14,
-                    backgroundColor: '#080b0b',
+                    backgroundColor: colors.input,
                     borderWidth: 1,
-                    borderColor: '#3a3120',
+                    borderColor: colors.border,
                   }}
                 >
                   <Text

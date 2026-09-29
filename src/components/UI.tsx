@@ -31,7 +31,7 @@ export function Screen({
   const layout = useLayout();
   return (
     <LinearGradient
-      colors={['#171914', '#070c0d', '#020607', '#061719']}
+      colors={[colors.surfaceHighlight, colors.bg, '#400d22', '#57132e']}
       style={{ flex: 1 }}
       locations={[0, 0.17, 0.8, 1]}
     >
@@ -124,7 +124,11 @@ export function Button({
         ]}
       >
         <LinearGradient
-          colors={secondary ? ['#181e1f', '#101516'] : [colors.pale, '#d49b40']}
+          colors={
+            secondary
+              ? [colors.card, colors.button]
+              : [colors.buttonHighlight, colors.button]
+          }
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 1 }}
           style={{
@@ -135,7 +139,7 @@ export function Button({
             borderRadius: 15,
             alignItems: 'center',
             borderWidth: 1,
-            borderColor: secondary ? colors.border : '#e7bd6d',
+            borderColor: colors.border,
           }}
         >
           <Text
@@ -144,7 +148,7 @@ export function Button({
               lineHeight: 20,
               flexShrink: 1,
               fontWeight: '500',
-              color: secondary ? colors.text : '#241c0b',
+              color: colors.text,
               textAlign: 'center',
             }}
           >
@@ -217,8 +221,8 @@ export function Tag({ children }: PropsWithChildren) {
       style={[
         s.chip,
         {
-          backgroundColor: '#0b2926',
-          borderColor: '#17514b',
+          backgroundColor: colors.card,
+          borderColor: colors.border,
           alignSelf: 'flex-start',
           maxWidth: layout.narrow ? 105 : 150,
         },
@@ -234,7 +238,7 @@ export function Progress({ value }: { value: number }) {
       style={{
         height: 4,
         borderRadius: 4,
-        backgroundColor: '#252b2b',
+        backgroundColor: colors.border,
         overflow: 'hidden',
       }}
     >
@@ -273,7 +277,7 @@ export function StepProgress({
             flex: 1,
             height: 4,
             borderRadius: 4,
-            backgroundColor: '#252b2b',
+            backgroundColor: colors.border,
             overflow: 'hidden',
           }}
         >
@@ -359,7 +363,7 @@ export function Sheet({
         <View
           style={{
             maxHeight: layout.compact ? '94%' : '85%',
-            backgroundColor: '#131a1d',
+            backgroundColor: colors.card,
             padding: layout.gutter,
             paddingBottom: Math.max(16, layout.insets.bottom),
             borderTopLeftRadius: 30,
@@ -440,7 +444,7 @@ export function Ring({ value, label }: { value: number; label: string }) {
           cx={60}
           cy={60}
           r={51}
-          stroke="#30322b"
+          stroke={colors.border}
           strokeWidth={7}
           fill="none"
         />

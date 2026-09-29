@@ -1,4 +1,4 @@
-package com.bigsound.basstoolkit
+package com.soundtheorylab
 
 import android.media.AudioFormat
 import android.media.AudioRecord

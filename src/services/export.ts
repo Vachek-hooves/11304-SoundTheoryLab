@@ -9,7 +9,7 @@ export async function exportRun(
   type: 'csv' | 'pdf' | 'copy',
 ) {
   const stats = statistics(run.values);
-  const summary = `Big Sound · Simulation\n${new Date(
+  const summary = `Sound Theory Lab · Simulation\n${new Date(
     run.date,
   ).toLocaleString()}\nExpected: ${
     run.frequency
@@ -48,7 +48,7 @@ export async function exportRun(
     return;
   }
   const report = await generatePDF({
-    html: `<html><body style="font-family:Helvetica;padding:32px"><h1>Big Sound</h1><h2>Signal simulation report</h2><pre style="font-size:14px;line-height:1.8">${summary}</pre><p>Monte Carlo trials use a synthesized sine wave, uniform frequency variation, additive uniform noise and rising zero-crossing frequency estimation at 4096 samples/second.</p></body></html>`,
+    html: `<html><body style="font-family:Helvetica;padding:32px"><h1>Sound Theory Lab</h1><h2>Signal simulation report</h2><pre style="font-size:14px;line-height:1.8">${summary}</pre><p>Monte Carlo trials use a synthesized sine wave, uniform frequency variation, additive uniform noise and rising zero-crossing frequency estimation at 4096 samples/second.</p></body></html>`,
     fileName: `simulation-${run.id}`,
   });
   if (!report.filePath) {
