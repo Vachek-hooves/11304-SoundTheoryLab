@@ -79,7 +79,7 @@ android {
 
     namespace "com.soundtheorylab"
     defaultConfig {
-        applicationId "com.soundtheorylab"
+        applicationId "com.test.project" // TEST SANDBOX — real value: com.soundtheorylab
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
